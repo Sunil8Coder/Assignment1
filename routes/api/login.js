@@ -27,7 +27,7 @@ loginRoute.post('/',(req,res,next)=>{
          res.status(500).json(err);
       }else{
          if(result.length>=1){
-            let html = `<table border = "1" style ="border-collapse:collapse">
+            let html = `<h2>User Detail:</h2><table border = "1" style ="border-collapse:collapse">
             <tr><td>Id</td><td>${result[0].Id}</td></tr>
             <tr><td>Username</td><td>${result[0].Username}</td></tr>
             <tr><td>Email</td><td>${result[0].Email}</td></tr>
@@ -39,7 +39,7 @@ loginRoute.post('/',(req,res,next)=>{
         }
         
          }else{
-            res.send(result+"There is wrong in your password = "+password+" or email = "+email);
+            res.send("There is wrong in your password or email");
             console.log(result);
          }
       }
