@@ -9,3 +9,31 @@ If you sign up then it will send a link to your email for verification of email 
 If you verify with wrong email then it render "Please first Sign Up please." If you verify with properly then it will to take you to user detail.
 
 User Detail Page will render after properly login in.
+
+How to sign in:
+1.  Enter "localhost:3000/" 
+2.  Click on "sign in" button
+3.  Enter your "username" and "email" with unique and create "password" for login
+4.  After clicking on a submit button, a link will send in your email inbox.
+5.  After clicking link then a page will be open then you have to login
+6.  Then you will get user detail
+
+How to login:
+1.  Enter "localhost:3000/" 
+2.  Click on "login" button
+3.  Enter your email and password
+4.  You will be on user detail
+
+Database Setting for MariaDB of XAMPP Server:
+host:"localhost",
+port:3306,
+password:"",
+username:"root",
+database:"test"
+
+Now Creating Table in "test" Database:
+Query: CREATE TABLE users(Id int AUTO_INCREMENT PRIMARY KEY, Username varchar(50) NOT NULL UNIQUE, Email varchar(50) NOT NULL UNIQUE, Password varchar(100));
+
+How To Run:
+1.  First Run Database server
+2.  Then Run Nodejs Server
