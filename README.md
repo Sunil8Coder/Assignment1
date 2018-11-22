@@ -1,6 +1,5 @@
 # Assignment1
 Email Verification in Nodejs
-
 First Page is index page from there you can go on either login or signup.
 If you try to login without sign up then it will send this message "There is wrong in your password or email"
 If you login after sign up then It will show you user detail.
@@ -24,16 +23,24 @@ How to login:
 3.  Enter your email and password
 4.  You will be on user detail
 
-Database Setting for MariaDB of XAMPP Server:
-host:"localhost",
-port:3306,
-password:"",
-username:"root",
-database:"test"
-
-Now Creating Table in "test" Database:
-Query: CREATE TABLE users(Id int AUTO_INCREMENT PRIMARY KEY, Username varchar(50) NOT NULL UNIQUE, Email varchar(50) NOT NULL UNIQUE, Password varchar(100));
-
 How To Run:
+
 1.  First Run Database server
-2.  Then Run Nodejs Server
+
+i.      First Download Xampp Server which contain mysql server
+ii.     Second Download Install Xampp Server
+iii.    Start Appche Server and Mysql Server from XAMPP Control Panel
+          Database Setting for MariaDB of XAMPP Server:
+          host:"localhost",
+          port:3306,
+          password:"",
+          username:"root",
+          database:"test"
+iv.     Now Creating Table in "test" Database:
+        Query: CREATE TABLE users(Id int AUTO_INCREMENT PRIMARY KEY, Username varchar(50) NOT NULL UNIQUE, Email varchar(50) NOT NULL           UNIQUE, Password varchar(100) NOT NULL, Status bool);
+
+
+2.  How to Run Nodejs Server
+i.  Make sure your directory should be like below
+  -D:
+     ->
